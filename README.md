@@ -39,6 +39,6 @@ The goal is to demonstrate practical knowledge of identity, access control, and 
 - Rebooted and verified Server Manager
 - Took clean snapshot before AD installation
 
-
-
+## Progress
+- Installed Active Directory Domain Services role on DC01 (pre-domain promotion)
 
