@@ -42,3 +42,5 @@ The goal is to demonstrate practical knowledge of identity, access control, and 
 ## Progress
 - Installed Active Directory Domain Services role on DC01 (pre-domain promotion)
 
+- Promoted DC01 to a Domain Controller and created a new Active Directory forest (lab.local)
+
