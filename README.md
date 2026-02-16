@@ -1,7 +1,7 @@
 # Active Directory Home Lab
 
 This repository documents a hands-on Active Directory lab built in VirtualBox.
-The goal is to demonstrate practical knowledge of identity, access control, and basic Windows domain administration.
+The goal is to simulate enterprise identity infrastructure, implement least privilege access control, and document identity lifecycle processes using Active Directory.
 
 ## Environment
 - Oracle VirtualBox
