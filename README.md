@@ -1,7 +1,7 @@
 # Active Directory Home Lab
 
 This repository documents a hands-on Active Directory lab built in VirtualBox.
-The goal is to simulate enterprise identity infrastructure, implement least privilege access control, and document identity lifecycle processes using Active Directory.
+The goal is to simulate enterprise identity infrastructure, implement least-privilege access control, and document identity lifecycle processes using Active Directory.
 
 ## Environment
 - Oracle VirtualBox
@@ -40,7 +40,41 @@ The goal is to simulate enterprise identity infrastructure, implement least priv
 - Took clean snapshot before AD installation
 
 ## Progress
-- Installed Active Directory Domain Services role on DC01 (pre-domain promotion)
+### Phase 1 – Identity Infrastructure Design
+### Domain Configuration
+- Configured static IP (10.0.2.15) for domain controller
+- Configured DNS to point to domain controller (self-referential)
+- Confirmed DHCP disabled
+- Verified network alignment with VirtualBox NAT
 
-- Promoted DC01 to a Domain Controller and created a new Active Directory forest (lab.local)
+### OU Architecture
+- Designed structured OU hierarchy under Corporate
+- Separated Users, Groups, Workstations, Servers, and Disabled Accounts
+- Created department-level OUs (HR, Finance, IT, Sales)
+- Avoided use of default Users container for better policy control
 
+### Group Strategy (AGDLP Model)
+- Created Global security groups per department
+- Created Domain Local groups for resource-level access
+- Nested Global groups into Domain Local groups
+- Implemented least privilege access modeling
+
+## Architecture Overview
+Current Logical Structure:
+lab.local
+└── Corporate
+    ├── Users
+    │   ├── HR
+    │   ├── Finance
+    │   ├── IT
+    │   └── Sales
+    ├── Groups
+    ├── Workstations
+    ├── Servers
+    └── Disabled_Accounts
+## What this shows
+- understanding of enterprise OU design
+- Implementation of AGDLP access model
+- RBAC structure
+- Least privilege princples
+- Change management via snapshots
