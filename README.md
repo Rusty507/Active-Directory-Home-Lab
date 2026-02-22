@@ -89,11 +89,3 @@ Screenshots/
 
 
 
-
-
-
-
-
-
-
-- Change management via snapshots
