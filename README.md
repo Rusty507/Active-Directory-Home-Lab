@@ -73,19 +73,19 @@ This enables scalable RBAC modeling and simplifies access auditing.
 
 ## Repository Structure
 Architecture/
-Design diagrams and logical models.
+- Design diagrams and logical models.
 
 Implementataion/
-Step-by-step configuration documentation.
+- Step-by-step configuration documentation.
 
 Automation/
-PowerShell provisioning scripts [Phase 1 upcoming]
+- PowerShell provisioning scripts [Phase 1 upcoming]
 
 Incidents/
-Troubleshooting and root cause analysis scenarios.
+- Troubleshooting and root cause analysis scenarios.
 
 Screenshots/
-Supporting evidence of configuration.
+- Supporting evidence of configuration.
 
 
 
